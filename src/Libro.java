@@ -1,3 +1,4 @@
+//Por funcionalidad creímos conveniente añadir esta librería para el año de publicación
 import java.time.Year;
 
 /**
@@ -21,7 +22,6 @@ public class Libro {
      * @param titulo Nombre del libro.
      * @param autor Nombre y apellidos del autor del libro.
      * @param ejemplaresDisponibles Número de ejemplares actualmente en la biblioteca.
-     * @return Dato de tipo Libro inicializado con los argumentos de entrada. 
      */
     public Libro(String isbn, String titulo, String autor, int ejemplaresDisponibles) {
         this.isbn = isbn;
@@ -40,7 +40,6 @@ public class Libro {
      * @param ejemplaresDisponibles Número de ejemplares actualmente en la biblioteca.
      * @param publicacion Año de publicacion del libro
      * @param genero Clasificación de género para el libro según su contenido
-     * @return Dato de tipo Libro inicializado con los argumentos ampliados de entrada. 
      */
     public Libro(String isbn, String titulo, String autor, int ejemplaresDisponibles, Year publicacion, String genero) {
         this.isbn = isbn;
@@ -69,7 +68,7 @@ public class Libro {
 
     /**
      * Método para verificar si el libro está disponible.
-     * @return 1 si hay al menos un ejemplar disponible. En caso contrario 0. 
+     * @return 'true' si hay al menos un ejemplar disponible. En caso contrario 'false'. 
      */
     public boolean estaDisponible() {
         return this.ejemplaresDisponibles > 0;
@@ -77,7 +76,7 @@ public class Libro {
 
     /**
      * Método para prestar el libro.
-     * @return 1 si se ha efectuado el préstamo, 0 si no había ejemplares disponibles. 
+     * @return 'true' si se ha efectuado el préstamo, 'false' si no había ejemplares disponibles. 
      */
     public boolean prestar() {
         if (estaDisponible()) {
@@ -110,9 +109,9 @@ public class Libro {
     @Override
     public String toString() {
         if (this.genero != null && this.publicacion != null) {
-            return "ISBN: " + this.isbn + ". " + this.descripcion() + "Año de publicacion: " + this.publicacion + " Genero: " + this.genero + " (" +this.ejemplaresDisponibles + " ejemplares disponibles)";
+            return "ISBN: " + this.isbn + ". " + this.descripcion() + "Año de publicacion: " + this.publicacion + " Género: " + this.genero + " (" + this.ejemplaresDisponibles + " ejemplares disponibles)";
         }
-        return "ISBN: " + this.isbn + ". " + this.descripcion() + " (" +this.ejemplaresDisponibles + " ejemplares disponibles)";
+        return "ISBN: " + this.isbn + ". " + this.descripcion() + " (" + this.ejemplaresDisponibles + " ejemplares disponibles)";
     }
 
 }
