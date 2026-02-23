@@ -1,0 +1,487 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="15.1">
+  <zoom_level>5</zoom_level>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>440</x>
+      <y>450</y>
+      <w>105</w>
+      <h>110</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;Enumeración&gt;&gt;
+Lenguaje
+--
+JAVA
+CPP
+C
+CSHARP
+PYTHON
+RUST
+R
+JS
+VHDL
+ASSEMBLY
+HTML
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>185</x>
+      <y>345</y>
+      <w>105</w>
+      <h>95</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;Abstracta&gt;&gt;
+Tarea
+--
+- nombre: String
+- prompt: String
+--
++ toString(): String
++ getNumSolicitudes(): int
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>285</x>
+      <y>390</y>
+      <w>165</w>
+      <h>120</h>
+    </coordinates>
+    <panel_attributes>lt=-&gt;
+m2=lenguaje</panel_attributes>
+    <additional_attributes>10.0;10.0;310.0;220.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>185</x>
+      <y>480</y>
+      <w>105</w>
+      <h>35</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;Abstracta&gt;&gt;
+TareaConContexto
+--
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>415</x>
+      <y>575</y>
+      <w>105</w>
+      <h>50</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;Enumeración&gt;&gt;
+Contexto
+--
+PROYECTO
+CLASE
+METODO
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>285</x>
+      <y>505</y>
+      <w>140</w>
+      <h>110</h>
+    </coordinates>
+    <panel_attributes>lt=-&gt;
+m2=contexto 0..*
+</panel_attributes>
+    <additional_attributes>10.0;10.0;260.0;200.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>230</x>
+      <y>435</y>
+      <w>15</w>
+      <h>55</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;90.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>245</x>
+      <y>585</y>
+      <w>105</w>
+      <h>35</h>
+    </coordinates>
+    <panel_attributes>Generacion
+--
+
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>120</x>
+      <y>585</y>
+      <w>105</w>
+      <h>35</h>
+    </coordinates>
+    <panel_attributes>Optimizacion
+--
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>170</x>
+      <y>510</y>
+      <w>35</w>
+      <h>85</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>50.0;10.0;10.0;150.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>240</x>
+      <y>510</y>
+      <w>35</w>
+      <h>85</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;50.0;150.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>30</x>
+      <y>415</y>
+      <w>105</w>
+      <h>30</h>
+    </coordinates>
+    <panel_attributes>Consulta
+--
+
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>130</x>
+      <y>415</y>
+      <w>65</w>
+      <h>30</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>110.0;10.0;10.0;40.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>5</x>
+      <y>345</y>
+      <w>105</w>
+      <h>30</h>
+    </coordinates>
+    <panel_attributes>TareaCompuesta
+--
+
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>105</x>
+      <y>360</y>
+      <w>90</w>
+      <h>35</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;&lt;-
+m2=1..* {ordenadas}</panel_attributes>
+    <additional_attributes>10.0;10.0;160.0;50.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>105</x>
+      <y>190</y>
+      <w>210</w>
+      <h>70</h>
+    </coordinates>
+    <panel_attributes>Asistente
+--
+- nombre: String
+--
++ obtenerRankingTareasSolicitadas(): List&lt;Tarea&gt;
++ obtenerRankingTareasAplicadas(): List&lt;Tarea&gt;
++ obtenerCosteTotal(programador: Programador): double
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>385</x>
+      <y>165</y>
+      <w>115</w>
+      <h>65</h>
+    </coordinates>
+    <panel_attributes>LLM
+--
+- nombre: String
+- costePorToken: double
+- apiKey: String
+- temperatura: double
+--
++ getCostePorToken(): double</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>310</x>
+      <y>220</y>
+      <w>85</w>
+      <h>40</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-
+m1=0..* llm</panel_attributes>
+    <additional_attributes>150.0;10.0;10.0;60.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>285</x>
+      <y>225</y>
+      <w>170</w>
+      <h>155</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-
+m1=0..1 llm</panel_attributes>
+    <additional_attributes>280.0;10.0;10.0;290.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>310</x>
+      <y>190</y>
+      <w>85</w>
+      <h>40</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-
+m1=llmPorDefecto</panel_attributes>
+    <additional_attributes>150.0;10.0;10.0;60.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>450</x>
+      <y>105</y>
+      <w>105</w>
+      <h>35</h>
+    </coordinates>
+    <panel_attributes>Programador
+--
+- nombre: String
+- usuarioGitHub: String
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>270</x>
+      <y>125</y>
+      <w>190</w>
+      <h>75</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-
+m1=0..* programadores</panel_attributes>
+    <additional_attributes>360.0;10.0;10.0;130.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>420</x>
+      <y>325</y>
+      <w>125</w>
+      <h>105</h>
+    </coordinates>
+    <panel_attributes>Ejecucion
+--
+- fechaSolicitud: Date
+- fechaRespuesta: Date
+- solicitud: String
+- respuesta: String
+- tokensEntrada: int
+- tokensSalida: int
+- fueAplicada: boolean
+--
++ obtenerCoste(): double
++ getTarea(): Tarea
++ getFueAplicada(): boolean
++ getProgramador(): Programador
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>505</x>
+      <y>135</y>
+      <w>50</w>
+      <h>200</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-
+m1=autor</panel_attributes>
+    <additional_attributes>50.0;10.0;10.0;380.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>460</x>
+      <y>225</y>
+      <w>35</w>
+      <h>110</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-
+m1=llm</panel_attributes>
+    <additional_attributes>10.0;10.0;50.0;200.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>295</x>
+      <y>255</y>
+      <w>135</w>
+      <h>105</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-
+m1=0..* historial</panel_attributes>
+    <additional_attributes>250.0;190.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>285</x>
+      <y>370</y>
+      <w>145</w>
+      <h>25</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-
+m1=tarea</panel_attributes>
+    <additional_attributes>10.0;20.0;270.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>105</x>
+      <y>350</y>
+      <w>90</w>
+      <h>35</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>160.0;50.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLNote</id>
+    <coordinates>
+      <x>640</x>
+      <y>115</y>
+      <w>350</w>
+      <h>230</h>
+    </coordinates>
+    <panel_attributes>*Diseño*
+
+Para resolver las tareas compuestas, he planteado una estructura donde una 
+TareaCompuesta tiene una lista ordenada de otras tareas (una agregación). Así 
+resulta fácil anidar tareas unas dentro de otras para que se ejecuten 
+secuencialmente. Además, para no repetir código, he agrupado las tareas de 
+generación y optimización en una clase abstracta TareaConContexto, usando el 
+enumerado Contexto para definir si necesitan leer todo el proyecto, la clase o 
+solo el método actual.  Esto asegura extensibilidad en caso de querer modificar 
+las opciones de contexto en un futuro.  
+
+Para llevar el registro del historial, he creado la clase Ejecucion. Esta clase 
+guarda quién hizo la petición, los tokens gastados y si la respuesta se aplicó o 
+se descartó. El detalle clave de este diseño es que cada ejecución guarda una 
+conexión directa con el LLM concreto que se usó ese día. De esta forma, si el
+asistente cambia su modelo por defecto mañana, el cálculo del coste de las 
+ejecuciones pasadas no se rompe ni se recalcula con el precio nuevo.
+
+Por último, haciendo caso a la norma de no llenar el diagrama de getters y 
+setters innecesarios , solo he añadido los estrictamente obligatorios como 
+métodos auxiliares para poder resolver el apartado 2b. Por ejemplo, he 
+expuesto el coste por token en el LLM para calcular el precio de la ejecución,
+y he añadido métodos en el Asistente para que pueda iterar el historial y 
+sacar los rankings de tareas y el coste por programador.
+bg=#D2F7FF
+fontsize=17</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLNote</id>
+    <coordinates>
+      <x>640</x>
+      <y>365</y>
+      <w>350</w>
+      <h>265</h>
+    </coordinates>
+    <panel_attributes>*Métodos*
+
+Para implementar el método obtenerCoste() de la clase Ejecución solo se necesita
+añadir un método auxiliar, ya que el resto de información necesaria se encuentra
+en la propia clase, lo cual es de hecho el objetivo en diseños orientados a objetos,
+asegurar que el método se encuentra en la clase con toda la información necesaria.
+
+Para calcular el coste de una ejecución solo se necesita multiplicar el coste/token
+del llm elegido por el número de tokens usados en la ejecución, es decir, la suma
+de los tokens de entrada y los de salida. 
+
+--
+Método (auxiliar) getCostePorToken en LLM:
+
+
+  public double getCostePorToken() {
+          return this.costePorToken;
+   }
+ 
+
+--
+Método obtenerCoste() en Ejecucion
+
+
+  public double obtenerCoste() {
+          int tokensTotales = this.tokensEntrada + this.tokensSalida;
+          return tokensTotales * this.llm.getCostePorToken();
+   }
+ 
+bg=#D2F7FF
+fontsize=17</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>205</x>
+      <y>255</y>
+      <w>70</w>
+      <h>100</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;&lt;&lt;-
+m2=tareas 0..*</panel_attributes>
+    <additional_attributes>10.0;10.0;60.0;180.0</additional_attributes>
+  </element>
+</diagram>
